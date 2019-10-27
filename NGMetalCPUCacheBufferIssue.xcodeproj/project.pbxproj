@@ -13,6 +13,7 @@
 		A15D1CE12366646E002DD4B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D1CDF2366646E002DD4B5 /* Main.storyboard */; };
 		A15D1CE32366646F002DD4B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15D1CE22366646F002DD4B5 /* Assets.xcassets */; };
 		A15D1CE62366646F002DD4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D1CE42366646F002DD4B5 /* LaunchScreen.storyboard */; };
+		A15D1CEF236665AE002DD4B5 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A15D1CEE236665AE002DD4B5 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		A15D1CE22366646F002DD4B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15D1CE52366646F002DD4B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A15D1CE72366646F002DD4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15D1CED23666513002DD4B5 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		A15D1CEE236665AE002DD4B5 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				A15D1CE22366646F002DD4B5 /* Assets.xcassets */,
 				A15D1CE42366646F002DD4B5 /* LaunchScreen.storyboard */,
 				A15D1CE72366646F002DD4B5 /* Info.plist */,
+				A15D1CED23666513002DD4B5 /* ShaderTypes.h */,
+				A15D1CEE236665AE002DD4B5 /* Shaders.metal */,
 			);
 			path = NGMetalCPUCacheBufferIssue;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15D1CEF236665AE002DD4B5 /* Shaders.metal in Sources */,
 				A15D1CDE2366646E002DD4B5 /* ViewController.swift in Sources */,
 				A15D1CDA2366646E002DD4B5 /* AppDelegate.swift in Sources */,
 				A15D1CDC2366646E002DD4B5 /* SceneDelegate.swift in Sources */,
@@ -287,12 +293,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29P3YRFLV5;
 				INFOPLIST_FILE = NGMetalCPUCacheBufferIssue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahgilmore.NGMetalCPUCacheBufferIssue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = NGMetalCPUCacheBufferIssue/ShaderTypes.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,12 +313,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29P3YRFLV5;
 				INFOPLIST_FILE = NGMetalCPUCacheBufferIssue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahgilmore.NGMetalCPUCacheBufferIssue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = NGMetalCPUCacheBufferIssue/ShaderTypes.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
