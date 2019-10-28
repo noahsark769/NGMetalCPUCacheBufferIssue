@@ -9,7 +9,7 @@
 import Cocoa
 import MetalKit
 
-class ViewController: NSViewController {
+class ViewControllerMac: NSViewController {
     private var mtkView: MTKView!
     private var vertices: [VertexInOut]!
     private var vertexBuffer: MTLBuffer!
@@ -76,7 +76,7 @@ class ViewController: NSViewController {
     }
 }
 
-extension ViewController: MTKViewDelegate {
+extension ViewControllerMac: MTKViewDelegate {
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
         print("Drawable size changed to: \(size)")
     }
